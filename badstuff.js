@@ -10,5 +10,6 @@ function reqListener () {
 var c = new XMLHttpRequest(); 
 c.addEventListener("load", reqListener);
 c.open("GET", "http://csec380-core.csec.rit.edu:86/add_comment.php?id=93&comment=" +comment, true); 
+c.setRequestHeader("Content-type", "text/javascript");
 c.send();
 
